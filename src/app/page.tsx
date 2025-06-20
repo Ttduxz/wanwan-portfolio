@@ -11,6 +11,7 @@ export default function Home() {
           <nav className="hidden md:flex gap-10 text-base font-light tracking-wider">
             <Link href="/" className="hover:text-gray-500 transition">ABOUT</Link>
             <Link href="/portfolio" className="hover:text-gray-500 transition">PORTFOLIO</Link>
+            <Link href="/why-me" className="hover:text-gray-500 transition">WHY ME</Link>
             <Link href="/contact" className="hover:text-gray-500 transition">CONTACT</Link>
           </nav>
         </div>
