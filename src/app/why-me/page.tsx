@@ -4,19 +4,6 @@ import Image from "next/image";
 export default function WhyMe() {
   return (
     <main className="min-h-screen font-sans bg-gradient-to-b from-white via-[#fdfaf3] to-[#fcf7ed] text-gray-800">
-      {/* Header / Navigation */}
-      <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-10 border-b border-[#f5f5f5]">
-        <div className="max-w-7xl mx-auto px-6 sm:px-12 flex justify-between items-center h-20">
-          <Link href="/" className="font-bold text-2xl tracking-widest font-['Playfair_Display'] hover:text-gray-500 transition">JIRAPAT KANTAROS</Link>
-          <nav className="hidden md:flex gap-10 text-base font-light tracking-wider">
-            <Link href="/" className="hover:text-gray-500 transition">ABOUT</Link>
-            <Link href="/portfolio" className="hover:text-gray-500 transition">PORTFOLIO</Link>
-            <Link href="/why-me" className="hover:text-gray-500 transition">WHY ME</Link>
-            <Link href="/contact" className="hover:text-gray-500 transition">CONTACT</Link>
-          </nav>
-        </div>
-      </header>
-
       {/* Main Content Section */}
       <div className="flex flex-col items-center justify-center min-h-screen pt-28 pb-12 max-w-3xl mx-auto px-6 sm:px-12">
         <h1 className="text-4xl md:text-6xl font-['Playfair_Display'] font-bold mb-8 leading-tight text-center">Why Should You Choose Me?</h1>
@@ -36,14 +23,6 @@ export default function WhyMe() {
           </p>
         </section>
       </div>
-
-      {/* Footer */}
-      <footer className="w-full border-t border-[#f5f5f5] py-8 mt-8 bg-white/70 text-center text-sm font-light tracking-wider">
-        <div className="max-w-7xl mx-auto px-6 sm:px-12 flex flex-col md:flex-row justify-between items-center gap-4">
-          <span>© {new Date().getFullYear()} Jirapat Kantaros</span>
-          <span>Contact: <a href="mailto:wanwanjirapatkantaros@gmail.com" className="underline hover:text-gray-500">wanwanjirapatkantaros@gmail.com</a></span>
-        </div>
-      </footer>
     </main>
   );
 } 
