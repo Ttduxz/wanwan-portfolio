@@ -11,25 +11,13 @@ export default function Home() {
           <p className="text-md text-gray-500 mb-10 tracking-widest">— BASED IN CHIANG MAI</p>
           <div className="border-l-2 border-amber-900 pl-6 space-y-8 text-gray-700">
             <p className="leading-relaxed">
-              My name is Jirapat Kantaros. I graduated from Chiang Mai
-              University, Faculty of Mass Communication, where I developed a
-              strong foundation in <span className="font-semibold">creative communication, media production,
-              marketing strategy, and project management</span> — including team
-              coordination and end-to-end campaign execution.
+              My name is Jirapat Kantaros. I graduated from Chiang Mai University, Faculty of Mass Communication. During my studies, I gained hands-on experience in areas like creative communication, media production, marketing planning, and basic project coordination.
             </p>
             <p className="leading-relaxed">
-              I&apos;m someone who enjoys <span className="font-semibold">turning ideas into action</span>. Whether it&apos;s
-              crafting engaging content, planning marketing strategies, or
-              directing visual campaigns, I always give my full energy and
-              attention to every detail. I believe that great work comes from
-              both <span className="font-semibold">creativity and commitment</span>.
+              I enjoy bringing ideas to life. Whether it&apos;s creating content, helping plan marketing campaigns, or working on visuals, I always do my best and pay attention to the details. I believe good work comes from creativity and consistency.
             </p>
             <p className="leading-relaxed">
-              During my time at university, I had the opportunity to intern with
-              Minor International (anello brand), where I managed real-world
-              marketing content from start to finish. That experience helped
-              shape my approach to communication—<span className="font-semibold">strategic, audience-focused,
-              and visually impactful</span>.
+              While at university, I interned with Minor International (anello brand), where I helped create marketing content. The internship helped me better understand how real marketing works. I was responsible for end-to-end tasks and had the opportunity to explore other areas like e-commerce and team coordination
             </p>
           </div>
         </section>
