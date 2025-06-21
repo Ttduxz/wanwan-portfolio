@@ -6,7 +6,7 @@ export default function WhyMe() {
     <main className="min-h-screen font-sans bg-gradient-to-b from-white via-[#fdfaf3] to-[#fcf7ed] text-gray-800">
       {/* Main Content Section */}
       <div className="flex flex-col items-center justify-center min-h-screen pt-28 pb-12 max-w-3xl mx-auto px-6 sm:px-12">
-        <h1 className="text-4xl md:text-6xl font-['Playfair_Display'] font-bold mb-8 leading-tight text-center">Why Should You Choose Me?</h1>
+        <h1 className="text-4xl md:text-6xl font-['Playfair_Display'] font-bold mb-8 leading-tight text-center" style={{textShadow: '0 2px 4px rgba(0,0,0,0.05)'}}>Why Should You Choose Me?</h1>
         <section className="mb-10">
           <p className="text-base leading-relaxed font-light mb-6 text-center">
             Choosing the right designer is about more than just skills—it's about passion, reliability, and a genuine desire to help you succeed. Here's why I believe I'm the right fit for your next project:
