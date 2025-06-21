@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
@@ -19,7 +18,7 @@ export default function Home() {
               coordination and end-to-end campaign execution.
             </p>
             <p className="leading-relaxed">
-              I'm someone who enjoys <span className="font-semibold">turning ideas into action</span>. Whether it's
+              I&apos;m someone who enjoys <span className="font-semibold">turning ideas into action</span>. Whether it&apos;s
               crafting engaging content, planning marketing strategies, or
               directing visual campaigns, I always give my full energy and
               attention to every detail. I believe that great work comes from
@@ -37,9 +36,11 @@ export default function Home() {
         {/* Right: Image */}
         <section className="w-full md:w-2/5 flex items-start justify-center md:pt-20">
           <div className="w-full max-w-md aspect-[3/4] flex items-center justify-center">
-            <img
+            <Image
               src="/profile.png"
               alt="JIRAPAT KANTAROS Portrait"
+              width={400}
+              height={533}
               className="w-full h-full object-contain rounded-2xl shadow-md"
             />
           </div>
@@ -60,19 +61,19 @@ export default function Home() {
         <section className="mb-10">
           <h2 className="text-2xl font-['Playfair_Display'] font-semibold mb-4">My Story</h2>
           <p className="text-base leading-relaxed font-light mb-4 text-center">
-            Hi! I'm Jirapat Kantaros, a graphic design student based in Chiang Mai. My journey in design began with a love for art and storytelling. Over the years, I've developed a passion for visual communication and enjoy using design to solve problems and inspire others. I believe that good design is not just about aesthetics, but about making meaningful connections.
+            Hi! I&apos;m Jirapat Kantaros, a graphic design student based in Chiang Mai. My journey in design began with a love for art and storytelling. Over the years, I&apos;ve developed a passion for visual communication and enjoy using design to solve problems and inspire others. I believe that good design is not just about aesthetics, but about making meaningful connections.
           </p>
         </section>
         <section className="mb-10">
           <h2 className="text-2xl font-['Playfair_Display'] font-semibold mb-4">My Design Philosophy</h2>
           <p className="text-base leading-relaxed font-light mb-4 text-center">
-            I am inspired by simplicity, clarity, and the power of color. My approach is to create designs that are both beautiful and functional, always keeping the user's experience in mind. I love experimenting with new styles and techniques, and I am always eager to learn and grow as a designer.
+            I am inspired by simplicity, clarity, and the power of color. My approach is to create designs that are both beautiful and functional, always keeping the user&apos;s experience in mind. I love experimenting with new styles and techniques, and I am always eager to learn and grow as a designer.
           </p>
         </section>
         <section>
           <h2 className="text-2xl font-['Playfair_Display'] font-semibold mb-4">Beyond Design</h2>
           <p className="text-base leading-relaxed font-light text-center">
-            When I'm not designing, you can find me exploring new cafes, traveling, or capturing moments with my camera. I also enjoy reading, music, and spending time with friends and family. These experiences fuel my creativity and help me bring fresh perspectives to my work.
+            When I&apos;m not designing, you can find me exploring new cafes, traveling, or capturing moments with my camera. I also enjoy reading, music, and spending time with friends and family. These experiences fuel my creativity and help me bring fresh perspectives to my work.
           </p>
         </section>
       </div>

@@ -1,6 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
-
 export default function Portfolio() {
   return (
     <main className="min-h-screen font-sans bg-gradient-to-b from-white via-[#fdfaf3] to-[#fcf7ed] text-gray-800 flex flex-col">
