@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const navLinks = [
@@ -15,9 +16,9 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-10 border-b border-gray-200/80 shadow-sm">
-      <div className="max-w-7xl mx-auto px-6 sm:px-12 flex justify-between items-center h-20">
-        <Link href="/" className="font-bold text-2xl tracking-widest font-['Playfair_Display'] hover:text-gray-500 transition">
-          JIRAPAT KANTAROS
+      <div className="max-w-7xl mx-auto px-6 sm:px-12 flex justify-between items-center h-24">
+        <Link href="/" className="hover:opacity-80 transition">
+          <Image src="/logo.png" alt="JK Logo" width={80} height={80} priority className="rounded-full" />
         </Link>
         <nav className="hidden md:flex gap-10 text-base font-light tracking-wider">
           {navLinks.map((link) => {
