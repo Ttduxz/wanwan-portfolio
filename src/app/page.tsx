@@ -4,36 +4,56 @@ import { projects } from "./portfolio/data";
 
 export default function Home() {
   return (
-    <main className="font-sans bg-gradient-to-b from-white via-[#fdfaf3] to-[#fcf7ed] text-gray-800">
+    <main className="font-sans bg-gradient-to-b from-[#fefcf8] to-[#fcf7ed] text-gray-800">
       
       {/* Hero Section */}
-      <section id="home" className="relative flex flex-col md:flex-row items-start justify-center min-h-screen pt-28 pb-12 max-w-7xl mx-auto px-6 sm:px-12 gap-8 md:gap-0">
-        {/* Left: Content */}
-        <div className="w-full md:w-3/5 flex flex-col justify-center items-start md:pr-12">
-          <h1 className="text-5xl md:text-7xl font-['Playfair_Display'] font-bold mb-4 leading-tight" style={{textShadow: '0 2px 4px rgba(0,0,0,0.05)'}}>Welcome to<br />My portfolio</h1>
-          <p className="text-md text-gray-500 mb-10 tracking-widest">— BASED IN CHIANG MAI</p>
-          <div className="border-l-2 border-amber-900 pl-6 space-y-8 text-gray-700">
-            <p className="leading-relaxed">
-              My name is Jirapat Kantaros. I graduated from Chiang Mai University, Faculty of Mass Communication. During my studies, I gained hands-on experience in areas like creative communication, media production, marketing planning, and basic project coordination.
-            </p>
-            <p className="leading-relaxed">
-              I enjoy bringing ideas to life. Whether it&apos;s creating content, helping plan marketing campaigns, or working on visuals, I always do my best and pay attention to the details. I believe good work comes from creativity and consistency.
-            </p>
-            <p className="leading-relaxed">
-              While at university, I interned with Minor International (anello brand), where I helped create marketing content. The internship helped me better understand how real marketing works. I was responsible for end-to-end tasks and had the opportunity to explore other areas like e-commerce and team coordination
-            </p>
+      <section id="home" className="relative flex flex-col items-center justify-center min-h-screen pt-28 pb-20 max-w-7xl mx-auto px-6 sm:px-12">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-0 w-full">
+          {/* Left: Content */}
+          <div className="w-full md:w-3/5 flex flex-col justify-center items-center md:items-start text-center md:text-left md:pr-12">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-['Playfair_Display'] font-bold mb-4 leading-tight" style={{textShadow: '0 2px 4px rgba(0,0,0,0.05)'}}>Welcome to<br />My portfolio</h1>
+            <p className="text-md text-gray-500 mb-10 tracking-widest">— A CREATIVE BASED IN CHIANG MAI</p>
+            
+            {/* --- CTA Buttons --- */}
+            <div className="w-full sm:w-auto">
+              {/* Mobile: 4-button grid */}
+              <div className="grid grid-cols-2 gap-3 md:hidden">
+                <Link href="/#about" className="bg-transparent border border-amber-800 text-amber-800 rounded-full px-4 py-2 text-sm font-semibold hover:bg-amber-800 hover:text-white transition-colors duration-300 text-center">
+                  About Me
+                </Link>
+                <Link href="/#portfolio" className="bg-transparent border border-amber-800 text-amber-800 rounded-full px-4 py-2 text-sm font-semibold hover:bg-amber-800 hover:text-white transition-colors duration-300 text-center">
+                  Portfolio
+                </Link>
+                <Link href="/#why-me" className="bg-transparent border border-amber-800 text-amber-800 rounded-full px-4 py-2 text-sm font-semibold hover:bg-amber-800 hover:text-white transition-colors duration-300 text-center">
+                  Why Me
+                </Link>
+                <Link href="/#contact" className="bg-amber-800 text-white rounded-full px-4 py-2 text-sm font-semibold hover:bg-amber-900 transition-colors duration-300 text-center">
+                  Contact Me
+                </Link>
+              </div>
+
+              {/* Desktop: 2-button row */}
+              <div className="hidden md:flex flex-col sm:flex-row items-center gap-4">
+                <Link href="/#portfolio" className="bg-amber-800 text-white rounded-full px-8 py-3 font-semibold hover:bg-amber-900 transition-colors duration-300 text-center w-full sm:w-auto">
+                  View My Work
+                </Link>
+                <Link href="/#contact" className="bg-transparent border border-amber-800 text-amber-800 rounded-full px-8 py-3 font-semibold hover:bg-amber-800 hover:text-white transition-colors duration-300 text-center w-full sm:w-auto">
+                  Contact Me
+                </Link>
+              </div>
+            </div>
           </div>
-        </div>
-        {/* Right: Image */}
-        <div className="w-full md:w-2/5 flex items-start justify-center md:pt-20">
-          <div className="w-full max-w-md aspect-[3/4] flex items-center justify-center">
-            <Image
-              src="/profile.png"
-              alt="JIRAPAT KANTAROS Portrait"
-              width={400}
-              height={533}
-              className="w-full h-full object-contain rounded-2xl shadow-md"
-            />
+          {/* Right: Image */}
+          <div className="w-full md:w-2/5 flex items-start justify-center mt-8 md:mt-0 md:pt-20">
+            <div className="w-full max-w-xs sm:max-w-sm md:max-w-md aspect-[3/4] flex items-center justify-center">
+              <Image
+                src="/profile.png"
+                alt="JIRAPAT KANTAROS Portrait"
+                width={400}
+                height={533}
+                className="w-full h-full object-contain rounded-2xl shadow-md"
+              />
+            </div>
           </div>
         </div>
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
@@ -47,7 +67,7 @@ export default function Home() {
       </section>
       
       {/* About Me Section */}
-      <section id="about" className="py-16 md:py-24 bg-white/50">
+      <section id="about" className="py-16 md:py-24 bg-white/60 backdrop-blur-sm">
         <div className="flex flex-col items-center justify-center max-w-3xl mx-auto px-6 sm:px-12">
           <h2 className="text-4xl md:text-6xl font-['Playfair_Display'] font-bold mb-12 leading-tight" style={{textShadow: '0 2px 4px rgba(0,0,0,0.05)'}}>About Me</h2>
           
@@ -83,6 +103,15 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Banner Section */}
+      <section className="py-12 bg-amber-800/5">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h3 className="text-2xl md:text-3xl font-['Playfair_Display'] font-semibold text-amber-900/80">
+            "I enjoy bringing ideas to life and believe good work comes from both creativity and consistency."
+          </h3>
+        </div>
+      </section>
+
       {/* Portfolio Section */}
       <section id="portfolio" className="py-16 md:py-24">
         <div className="w-full px-4 md:px-8 max-w-7xl mx-auto">
@@ -109,7 +138,7 @@ export default function Home() {
       </section>
 
       {/* Why Me Section */}
-      <section id="why-me" className="py-16 md:py-24 bg-white/50">
+      <section id="why-me" className="py-16 md:py-24 bg-white/60 backdrop-blur-sm">
         <div className="flex flex-col items-center justify-center max-w-3xl mx-auto px-6 sm:px-12">
           <h2 className="text-4xl md:text-6xl font-['Playfair_Display'] font-bold mb-8 leading-tight text-center" style={{textShadow: '0 2px 4px rgba(0,0,0,0.05)'}}>Why Should You Choose Me?</h2>
           <div className="text-center">
@@ -138,13 +167,13 @@ export default function Home() {
             I&apos;d love to hear from you! Whether you have a project in mind, want to collaborate, or just want to say hello, feel free to reach out using the form below or by email.
           </p>
           <form className="w-full max-w-md bg-white/80 rounded-xl shadow-lg p-6 mb-8 flex flex-col gap-4">
-            <input type="text" placeholder="Your Name" className="border border-gray-200 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-200" />
-            <input type="email" placeholder="Your Email" className="border border-gray-200 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-200" />
-            <textarea placeholder="Your Message" rows={4} className="border border-gray-200 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-200" />
-            <button type="submit" className="bg-pink-600 text-white rounded px-4 py-2 font-semibold shadow hover:shadow-lg hover:bg-pink-700 transition-all duration-300">Send Message</button>
+            <input type="text" placeholder="Your Name" className="border border-gray-200 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-200" />
+            <input type="email" placeholder="Your Email" className="border border-gray-200 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-200" />
+            <textarea placeholder="Your Message" rows={4} className="border border-gray-200 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-200" />
+            <button type="submit" className="bg-amber-800 text-white rounded px-4 py-2 font-semibold shadow hover:shadow-lg hover:bg-amber-900 transition-all duration-300">Send Message</button>
           </form>
           <div className="text-base font-light text-gray-700 text-center">
-            Or email me directly: <a href="mailto:wanwanjirapatkantaros@gmail.com" className="underline text-pink-600 hover:text-pink-800">wanwanjirapatkantaros@gmail.com</a>
+            Or email me directly: <a href="mailto:wanwanjirapatkantaros@gmail.com" className="underline text-amber-800 hover:text-amber-900">wanwanjirapatkantaros@gmail.com</a>
           </div>
         </div>
       </section>
