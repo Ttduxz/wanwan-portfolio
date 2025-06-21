@@ -1,6 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
-
 export default function WhyMe() {
   return (
     <main className="min-h-screen font-sans bg-gradient-to-b from-white via-[#fdfaf3] to-[#fcf7ed] text-gray-800">
@@ -9,7 +6,7 @@ export default function WhyMe() {
         <h1 className="text-4xl md:text-6xl font-['Playfair_Display'] font-bold mb-8 leading-tight text-center" style={{textShadow: '0 2px 4px rgba(0,0,0,0.05)'}}>Why Should You Choose Me?</h1>
         <section className="mb-10">
           <p className="text-base leading-relaxed font-light mb-6 text-center">
-            Choosing the right designer is about more than just skills—it's about passion, reliability, and a genuine desire to help you succeed. Here's why I believe I'm the right fit for your next project:
+            Choosing the right designer is about more than just skills—it&apos;s about passion, reliability, and a genuine desire to help you succeed. Here&apos;s why I believe I&apos;m the right fit for your next project:
           </p>
           <ul className="list-disc list-inside text-base font-light space-y-4 mb-8">
             <li><span className="font-semibold">Creative & Versatile:</span> I bring fresh ideas and adapt my style to fit your brand, ensuring every project is unique and memorable.</li>
@@ -19,7 +16,7 @@ export default function WhyMe() {
             <li><span className="font-semibold">Continuous Learner:</span> I stay up-to-date with the latest design trends and tools, so your project always feels modern and relevant.</li>
           </ul>
           <p className="text-base leading-relaxed font-light text-center">
-            Let's create something amazing together! I'm excited to help you bring your ideas to life and make your brand stand out.
+            Let&apos;s create something amazing together! I&apos;m excited to help you bring your ideas to life and make your brand stand out.
           </p>
         </section>
       </div>
