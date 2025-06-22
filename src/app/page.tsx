@@ -62,7 +62,7 @@ export default function Home() {
               </div>
               <div className="flex justify-center mt-8 lg:mt-0">
                 <Image
-                  src="/profile.webp"
+                  src="/profilev2.png"
                   alt="Jirapat Kantaros Profile"
                   width={400}
                   height={533}
