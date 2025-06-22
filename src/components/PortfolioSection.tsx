@@ -1,12 +1,9 @@
 'use client';
 
-import { projects } from "@/app/portfolio/data";
+import { portfolioImages } from "@/app/portfolio/data";
 import ProjectCarousel from "./ProjectCarousel";
 
 export default function PortfolioSection() {
-  // Combine all images from all projects into a single array
-  const allImages = projects.flatMap(project => project.images);
-
   return (
     <section id="portfolio" className="py-20 bg-white text-gray-800 lg:min-h-screen flex flex-col justify-center">
       {/* Main Portfolio Header */}
@@ -17,7 +14,7 @@ export default function PortfolioSection() {
       
       {/* A single, full-width carousel for all projects */}
       <div className="w-full px-4 sm:px-8 md:px-12 lg:px-20">
-        <ProjectCarousel images={allImages} title="Portfolio Work" />
+        <ProjectCarousel images={portfolioImages} title="Portfolio Work" />
       </div>
     </section>
   );
