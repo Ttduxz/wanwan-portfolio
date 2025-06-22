@@ -82,21 +82,21 @@ export default function Home() {
           <div className="mb-12 text-center w-full">
             <h3 className="text-2xl font-['Playfair_Display'] font-semibold mb-4">What I Can Do</h3>
             <div className="text-base leading-relaxed font-light text-left inline-block">
-              <p className="mb-4 text-center">I have experience working with real clients, both during my internship and in ongoing freelance work. I can plan and manage full campaigns, create content ideas, and handle social media from start to finish. I've created videos, designed visuals, and written briefs for different platforms like Facebook, TikTok, Shopee, and YouTube.</p>
+              <p className="mb-4 text-center">I have experience working with real clients, both during my internship and in ongoing freelance work. I can plan and manage full campaigns, create content ideas, and handle social media from start to finish. I&apos;ve created videos, designed visuals, and written briefs for different platforms like Facebook, TikTok, Shopee, and YouTube.</p>
               <p className="font-semibold text-center mt-6 mb-2">Here are some tools I use:</p>
               <ul className="list-none space-y-1 text-center">
                 <li><b>Design & Editing:</b> Lightroom, Photoshop, DaVinci Resolve, Canva</li>
                 <li><b>AI Tools:</b> ChatGPT, Claude, Gemini</li>
                 <li><b>Office Tools:</b> Microsoft Word, Excel, PowerPoint</li>
               </ul>
-              <p className="mt-4 text-center">I'm also confident in project coordination, teamwork, and communicating ideas clearly.</p>
+              <p className="mt-4 text-center">I&apos;m also confident in project coordination, teamwork, and communicating ideas clearly.</p>
             </div>
           </div>
 
           <div className="text-center w-full">
-            <h3 className="text-2xl font-['Playfair_Display'] font-semibold mb-4">What I'm Looking For</h3>
+            <h3 className="text-2xl font-['Playfair_Display'] font-semibold mb-4">What I&apos;m Looking For</h3>
             <p className="text-base leading-relaxed font-light">
-              I'm looking for opportunities to grow in marketing and creative work.
+              I&apos;m looking for opportunities to grow in marketing and creative work.
               I want to join a team where I can learn more, support brand goals, and bring real value through content and communication.
             </p>
           </div>
@@ -107,7 +107,7 @@ export default function Home() {
       <section className="py-12 bg-amber-800/5">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h3 className="text-2xl md:text-3xl font-['Playfair_Display'] font-semibold text-amber-900/80">
-            "I enjoy bringing ideas to life and believe good work comes from both creativity and consistency."
+            &quot;I enjoy bringing ideas to life and believe good work comes from both creativity and consistency.&quot;
           </h3>
         </div>
       </section>
