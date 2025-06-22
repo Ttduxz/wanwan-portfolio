@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -16,7 +14,7 @@ export default function Header() {
       <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 border-b border-gray-200/80 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 sm:px-12 flex justify-between items-center h-20">
           <Link href="/#home" className="hover:opacity-80 transition">
-            <Image src="/logo.png" alt="JK Logo" width={60} height={60} priority className="rounded-full" />
+            <Image src="/logo.webp" alt="JK Logo" width={60} height={60} priority className="rounded-full" />
           </Link>
 
           {/* Mobile Contact Info */}

@@ -4,8 +4,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair-display" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: 'swap' });
+const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair-display", display: 'swap' });
 
 export const metadata: Metadata = {
   title: "Jirapat Kantaros - Graphic Designer",
