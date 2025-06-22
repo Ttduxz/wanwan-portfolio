@@ -22,13 +22,13 @@ export default function Header() {
           {/* Mobile Contact Info */}
           <div className="md:hidden flex items-center gap-4">
             <a href="#" title="Add on LINE" className="hover:opacity-80 transition-opacity">
-              <Image src="/line_icon.svg" alt="LINE" width={26} height={26} />
+              <Image src="/line-me.png" alt="LINE" width={26} height={26} />
             </a>
             <a href="mailto:wanwanjirapatkantaros@gmail.com" title="Email me" className="hover:opacity-80 transition-opacity">
               <Image src="/email.svg" alt="Email" width={26} height={26} />
             </a>
             <a href="tel:0659626152" title="Call me" className="hover:opacity-80 transition-opacity">
-                <Image src="/phone_logo.svg" alt="Phone" width={24} height={24} />
+                <Image src="/phone_icon.png" alt="Phone" width={20} height={20} />
             </a>
           </div>
 
