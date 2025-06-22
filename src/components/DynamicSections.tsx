@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 
 const AboutSection = dynamic(() => import('@/components/AboutSection'));
-const WhyMeSection = dynamic(() => import('@/components/WhyMeSection'));
+const BrandsSection = dynamic(() => import('@/components/BrandsSection'));
 const ContactSection = dynamic(() => import('@/components/ContactSection'));
 
 const PortfolioSection = dynamic(() => import('@/components/PortfolioSection'), {
@@ -22,7 +22,7 @@ export default function DynamicSections() {
         </div>
       </section>
       <PortfolioSection />
-      <WhyMeSection />
+      <BrandsSection />
       <ContactSection />
     </>
   );
