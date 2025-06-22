@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import DynamicSections from "@/components/DynamicSections";
 import AnimatedSection from "@/components/AnimatedSection";
 
@@ -9,7 +10,7 @@ export default function Home() {
       {/* Hero Section */}
       <section 
         id="home" 
-        className="relative min-h-screen flex items-center pt-20 pb-20"
+        className="relative min-h-screen flex items-center py-16 md:py-20"
       >
         <div className="container mx-auto px-6 sm:px-12">
           <AnimatedSection>
@@ -18,16 +19,37 @@ export default function Home() {
                 <h1 className="text-5xl md:text-7xl font-['Playfair_Display'] font-bold text-gray-800 leading-tight">
                   Welcome to <br /> My Portfolio
                 </h1>
-                <p className="mt-4 text-lg text-gray-600 uppercase tracking-widest font-light">
+                <p className="mt-4 text-base md:text-lg text-gray-600 uppercase tracking-widest font-light">
                   — A Creative based in Chiang Mai
                 </p>
-                <div className="mt-8 flex gap-4 justify-center lg:justify-start">
-                  <a href="#portfolio" className="bg-amber-800 text-white rounded-full px-8 py-3 font-semibold shadow-md hover:shadow-lg hover:bg-amber-900 transition-all duration-300">
-                    View My Work
-                  </a>
-                  <a href="#contact" className="border border-amber-800 text-amber-800 rounded-full px-8 py-3 font-semibold hover:bg-amber-800 hover:text-white transition-colors duration-300">
-                    Contact Me
-                  </a>
+                
+                {/* --- CTA Buttons --- */}
+                <div className="mt-8 flex flex-col items-center lg:items-start">
+                  {/* Mobile: 4-button grid */}
+                  <div className="grid grid-cols-2 gap-3 md:hidden w-full max-w-xs">
+                    <Link href="/#about" className="border border-amber-800 text-amber-800 rounded-full px-4 py-2 text-sm font-semibold hover:bg-amber-800 hover:text-white transition-colors duration-300 text-center">
+                      About Me
+                    </Link>
+                    <Link href="/#portfolio" className="border border-amber-800 text-amber-800 rounded-full px-4 py-2 text-sm font-semibold hover:bg-amber-800 hover:text-white transition-colors duration-300 text-center">
+                      Portfolio
+                    </Link>
+                    <Link href="/#why-me" className="border border-amber-800 text-amber-800 rounded-full px-4 py-2 text-sm font-semibold hover:bg-amber-800 hover:text-white transition-colors duration-300 text-center">
+                      Why Me
+                    </Link>
+                    <Link href="/#contact" className="bg-amber-800 text-white rounded-full px-4 py-2 text-sm font-semibold hover:bg-amber-900 transition-colors duration-300 text-center">
+                      Contact Me
+                    </Link>
+                  </div>
+  
+                  {/* Desktop: 2-button row */}
+                  <div className="hidden md:flex gap-4">
+                    <Link href="/#portfolio" className="bg-amber-800 text-white rounded-full px-8 py-3 font-semibold shadow-md hover:shadow-lg hover:bg-amber-900 transition-all duration-300">
+                      View My Work
+                    </Link>
+                    <Link href="/#contact" className="border border-amber-800 text-amber-800 rounded-full px-8 py-3 font-semibold hover:bg-amber-800 hover:text-white transition-colors duration-300">
+                      Contact Me
+                    </Link>
+                  </div>
                 </div>
               </div>
               <div className="flex justify-center mt-8 lg:mt-0">

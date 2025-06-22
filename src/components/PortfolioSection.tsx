@@ -6,7 +6,7 @@ import AnimatedSection from "./AnimatedSection";
 
 export default function PortfolioSection() {
   return (
-    <section id="portfolio" className="py-20 bg-white text-gray-800 lg:min-h-screen flex flex-col justify-center">
+    <section id="portfolio" className="py-20 bg-white text-gray-800 lg:min-h-screen flex flex-col justify-center pb-16 md:pb-0">
       <AnimatedSection>
         {/* Main Portfolio Header */}
         <div className="container mx-auto px-4 md:px-8 text-center mb-16">

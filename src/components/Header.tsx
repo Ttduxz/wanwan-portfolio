@@ -38,7 +38,7 @@ export default function Header() {
 
         {/* Mobile Contact Info */}
         <div className="md:hidden flex items-center gap-4">
-          <a href="#" title="Add on LINE" className="hover:opacity-80 transition-opacity">
+          <a href="https://line.me/ti/p/wanwanjirapat" target="_blank" rel="noopener noreferrer" title="Add on LINE" className="hover:opacity-80 transition-opacity">
             <Image src="/line-me.png" alt="LINE" width={26} height={26} />
           </a>
           <a href="mailto:wanwanjirapatkantaros@gmail.com" title="Email me" className="hover:opacity-80 transition-opacity">

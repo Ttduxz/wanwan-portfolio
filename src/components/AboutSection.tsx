@@ -2,7 +2,7 @@ import AnimatedSection from './AnimatedSection';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 px-4 md:px-8 lg:px-16 xl:px-32 bg-white text-gray-800 lg:min-h-screen flex flex-col justify-center">
+    <section id="about" className="py-20 px-4 md:px-8 lg:px-16 xl:px-32 bg-white text-gray-800 lg:min-h-screen flex flex-col justify-center pb-16 md:pb-0">
       <AnimatedSection>
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-6xl font-['Playfair_Display'] font-bold mb-12 text-center leading-tight" style={{textShadow: '0 2px 4px rgba(0,0,0,0.05)'}}>About Me</h2>
