@@ -5,6 +5,7 @@ import { useFormStatus } from 'react-dom';
 import { useEffect, useRef } from 'react';
 import AnimatedSection from './AnimatedSection';
 import { sendEmail, type FormState } from '@/lib/actions';
+import Image from 'next/image';
 
 function SubmitButton() {
   const { pending } = useFormStatus();
@@ -70,8 +71,22 @@ export default function ContactSection() {
                 </p>
               )}
             </form>
-            <div className="text-base font-light text-gray-700 text-center">
-              Or email me directly: <a href="mailto:jirapatkantaros.work@gmail.com" className="underline text-amber-800 hover:text-amber-900 font-medium">jirapatkantaros.work@gmail.com</a>
+            <div className="text-base font-light text-gray-700 text-center mt-12">
+              <p className="mb-4">Or contact me directly through:</p>
+              <div className="flex flex-col items-center justify-center gap-4">
+                <a href="mailto:jirapatkantaros.work@gmail.com" className="inline-flex items-center gap-3 group">
+                  <Image src="/email.svg" alt="Email" width={24} height={24} />
+                  <span className="underline text-amber-800 group-hover:text-amber-900 font-medium transition-colors">jirapatkantaros.work@gmail.com</span>
+                </a>
+                <a href="https://line.me/ti/p/wanwanjirapat" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 group">
+                  <Image src="/line-me.png" alt="LINE" width={24} height={24} />
+                  <span className="underline text-amber-800 group-hover:text-amber-900 font-medium transition-colors">wanwanjirapat</span>
+                </a>
+                <a href="tel:0659626152" className="inline-flex items-center gap-3 group">
+                  <Image src="/phone_icon.png" alt="Phone" width={20} height={20} />
+                  <span className="underline text-amber-800 group-hover:text-amber-900 font-medium transition-colors">0659626152</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

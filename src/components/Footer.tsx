@@ -4,8 +4,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 sm:px-12 py-8">
         <div className="text-sm text-gray-500 font-light text-center md:flex md:justify-between">
           <p className="mb-2 md:mb-0">© {new Date().getFullYear()} Jirapat Kantaros. All Rights Reserved.</p>
-          <a href="mailto:wanwanjirapatkantaros@gmail.com" className="underline hover:text-amber-800 transition-colors">
-            wanwanjirapatkantaros@gmail.com
+          <a href="mailto:jirapatkantaros.work@gmail.com" className="underline hover:text-amber-800 transition-colors">
+            jirapatkantaros.work@gmail.com
           </a>
         </div>
       </div>
