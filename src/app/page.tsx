@@ -25,7 +25,7 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="text-center lg:text-left">
                 <h1 className="text-5xl md:text-7xl font-['Playfair_Display'] font-bold text-gray-800 leading-tight">
-                  Welcome to <br /> My Portfolio
+                  Welcome to <br /> My Website
                 </h1>
                 <p className="mt-4 text-base md:text-lg text-gray-600 uppercase tracking-widest font-light">
                   — A Creative based in Chiang Mai
