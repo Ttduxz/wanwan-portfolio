@@ -3,6 +3,7 @@ export const projects = [
     id: 'creative-campaign',
     title: 'Creative Campaign',
     category: 'Marketing',
+    description: 'This is a sample of the final graphic artwork I designed. It was created based on the brief I developed and provided to the graphic team, tailored for various campaigns on Facebook and other online platforms.',
     coverImage: '/portfolio-optimized/da782258-53ff-41f1-9b90-599ffb421f7c.webp',
     images: [
       '/portfolio-optimized/da782258-53ff-41f1-9b90-599ffb421f7c.webp',
@@ -17,6 +18,7 @@ export const projects = [
     id: 'brand-identity',
     title: 'Brand Identity',
     category: 'Branding',
+    description: 'I created the brand identity for a company, including logo design, color scheme, and typography. The goal was to create a visually appealing and memorable brand that stands out in the market.',
     coverImage: '/portfolio-optimized/49cfbe1b-c903-4ba4-9989-7de7d0c4a862.webp',
     images: [
       '/portfolio-optimized/49cfbe1b-c903-4ba4-9989-7de7d0c4a862.webp',
@@ -31,6 +33,7 @@ export const projects = [
     id: 'social-media-content',
     title: 'Social Media Content',
     category: 'Content Creation',
+    description: 'I created content for various social media platforms, including Facebook, Instagram, and TikTok. The content was designed to be engaging, entertaining, and align with the brand\'s image.',
     coverImage: '/portfolio-optimized/6f018ffd-c07e-4172-8808-f03f64674d93.webp',
     images: [
       '/portfolio-optimized/6f018ffd-c07e-4172-8808-f03f64674d93.webp',
@@ -47,6 +50,7 @@ export const projects = [
     id: 'product-showcase',
     title: 'Product Showcase',
     category: 'Photography',
+    description: 'I photographed various products, highlighting their features and benefits. The images were used for product descriptions, advertisements, and social media content.',
     coverImage: '/portfolio-optimized/7b56f42a-224e-40cd-b60b-85403226b4ef.webp',
     images: [
       '/portfolio-optimized/7b56f42a-224e-40cd-b60b-85403226b4ef.webp',
@@ -62,6 +66,7 @@ export const projects = [
     id: 'lifestyle-shots',
     title: 'Lifestyle Shots',
     category: 'Photography',
+    description: 'I photographed various lifestyle scenarios, capturing the essence and beauty of everyday life. The images were used for social media content, advertisements, and product promotions.',
     coverImage: '/portfolio-optimized/b30b6d2f-ac81-4109-a19a-4b0e1e15e8ea.webp',
     images: [
       '/portfolio-optimized/b30b6d2f-ac81-4109-a19a-4b0e1e15e8ea.webp',
