@@ -10,7 +10,7 @@ export const projects = [
       '/portfolio-optimized/4f3267d7-5ef0-4262-834c-083e0b4e27ab.webp',
       '/portfolio-optimized/b2bdfbfa-fa85-4a0b-9258-fcd7dcae87d5.webp',
       '/portfolio-optimized/ce0fa3e6-5924-418d-b001-dff4d4247937.webp',
-      '/portfolio-optimized/e60d6b5a-b281-470f-9366-ec1e621102a.webp',
+      '/portfolio-optimized/e60d6b5a-b281-470f-9366-ec1e6221102a.webp',
     ],
   },
   {

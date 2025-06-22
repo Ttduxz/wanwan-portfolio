@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable} scroll-smooth`}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable} scroll-smooth scroll-pt-6`}>
       <body className="font-sans">
         <Header />
         <div className="flex-grow">{children}</div>
