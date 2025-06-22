@@ -5,14 +5,22 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 export default function Home() {
   return (
-    <main className="font-sans bg-gradient-to-b from-[#fefcf8] to-[#fcf7ed] text-gray-800">
+    <main className="font-sans bg-gradient-to-b from-[#fefefe] to-[#faf9f6] text-gray-800">
       
       {/* Hero Section */}
       <section 
         id="home" 
-        className="relative min-h-screen flex items-center py-16 md:py-20"
+        className="relative overflow-hidden min-h-screen flex items-center py-16 md:py-20"
       >
-        <div className="container mx-auto px-6 sm:px-12">
+        <div 
+          aria-hidden="true"
+          className="hidden md:block absolute top-0 -left-1/4 w-[50rem] h-[50rem] bg-amber-400/20 rounded-full filter blur-3xl opacity-30"
+        ></div>
+         <div 
+          aria-hidden="true"
+          className="hidden md:block absolute -bottom-1/4 right-0 w-[30rem] h-[30rem] bg-orange-400/20 rounded-full filter blur-3xl opacity-40"
+        ></div>
+        <div className="container mx-auto px-6 sm:px-12 relative z-10">
           <AnimatedSection>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="text-center lg:text-left">

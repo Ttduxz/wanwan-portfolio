@@ -11,9 +11,17 @@ const brands = [
 
 export default function BrandsSection() {
   return (
-    <section id="brands" className="py-20 px-4 bg-gray-50 text-gray-800 lg:min-h-screen flex flex-col justify-center">
+    <section id="brands" className="relative overflow-hidden py-20 px-4 bg-gray-50 text-gray-800 lg:min-h-screen flex flex-col justify-center">
+      <div 
+        aria-hidden="true"
+        className="absolute top-0 -left-1/4 w-[40rem] h-[40rem] bg-gray-300/30 rounded-full filter blur-3xl opacity-50"
+      ></div>
+       <div 
+        aria-hidden="true"
+        className="absolute bottom-0 -right-1/4 w-[50rem] h-[50rem] bg-amber-100/30 rounded-full filter blur-3xl opacity-70"
+      ></div>
       <AnimatedSection>
-        <div className="container mx-auto text-center">
+        <div className="container mx-auto text-center relative z-10">
           <h2 className="text-4xl md:text-6xl font-['Playfair_Display'] font-bold mb-4 leading-tight" style={{textShadow: '0 2px 4px rgba(0,0,0,0.05)'}}>
             Brands I&apos;ve Worked With
           </h2>

@@ -2,9 +2,13 @@ import AnimatedSection from './AnimatedSection';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 px-4 md:px-8 lg:px-16 xl:px-32 bg-white text-gray-800 lg:min-h-screen flex flex-col justify-center pb-16 md:pb-0">
+    <section id="about" className="relative overflow-hidden py-20 px-4 md:px-8 lg:px-16 xl:px-32 bg-white text-gray-800 lg:min-h-screen flex flex-col justify-center pb-16 md:pb-0">
+      <div 
+        aria-hidden="true"
+        className="absolute top-1/4 left-1/4 w-96 h-96 bg-amber-200/30 rounded-full filter blur-3xl"
+      ></div>
       <AnimatedSection>
-        <div className="container mx-auto">
+        <div className="container mx-auto relative z-10">
           <h2 className="text-4xl md:text-6xl font-['Playfair_Display'] font-bold mb-12 text-center leading-tight" style={{textShadow: '0 2px 4px rgba(0,0,0,0.05)'}}>About Me</h2>
           
           <div className="grid lg:grid-cols-3 gap-12">
