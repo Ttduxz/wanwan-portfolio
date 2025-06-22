@@ -1,10 +1,10 @@
 export default function WhyMeSection() {
   return (
-    <section id="why-me" className="py-16 md:py-24 bg-white/60 backdrop-blur-sm">
-      <div className="flex flex-col items-center justify-center max-w-3xl mx-auto px-6 sm:px-12">
-        <h2 className="text-4xl md:text-6xl font-['Playfair_Display'] font-bold mb-8 leading-tight text-center" style={{textShadow: '0 2px 4px rgba(0,0,0,0.05)'}}>Why Should You Choose Me?</h2>
-        <div className="text-center">
-          <p className="text-base leading-relaxed font-light mb-6">
+    <section id="why-me" className="py-20 px-4 md:px-8 lg:px-16 xl:px-32 bg-gray-50 text-gray-800 lg:min-h-screen flex flex-col justify-center">
+      <div className="container mx-auto">
+        <h2 className="text-4xl md:text-6xl font-['Playfair_Display'] font-bold mb-12 text-center leading-tight" style={{textShadow: '0 2px 4px rgba(0,0,0,0.05)'}}>Why Should You Choose Me?</h2>
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-base leading-relaxed font-light mb-8">
             Choosing the right designer is about more than just skills—it&apos;s about passion, reliability, and a genuine desire to help you succeed. Here&apos;s why I believe I&apos;m the right fit for your next project:
           </p>
           <ul className="list-disc list-inside text-base font-light space-y-4 mb-8 inline-block text-left">
