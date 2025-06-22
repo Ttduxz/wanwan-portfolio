@@ -111,3 +111,23 @@ body {
   height: 1rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Custom focus-within styles for the contact form */
+.form-group:focus-within label {
+  color: #c084fc; /* purple-400 */
+}
+
+.form-group:focus-within .form-input {
+  border-color: #c084fc; /* purple-400 */
+  box-shadow: 0 0 0 2px rgba(192, 132, 252, 0.3);
+}
