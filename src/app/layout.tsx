@@ -8,8 +8,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: 'sw
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair-display", display: 'swap' });
 
 export const metadata: Metadata = {
-  title: "Jirapat Kantaros - Graphic Designer",
-  description: "Portfolio of Jirapat Kantaros, a graphic designer based in Chiang Mai.",
+  title: "Jirapat Kantaros - Content creater/Marketing",
+  description: "Portfolio of Jirapat Kantaros, a content creater/marketing based in Chiang Mai.",
 };
 
 export default function RootLayout({
