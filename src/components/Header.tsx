@@ -93,6 +93,38 @@ export default function Header({ language, setLanguage }: HeaderProps) {
               {language === 'en' ? link.labelEn : link.labelZh}
             </Link>
           ))}
+          <div className="ml-6 flex items-center">
+            <button
+              type="button"
+              onClick={() => setLanguage(language === 'en' ? 'zh' : 'en')}
+              title={language === 'en' ? 'Switch to 中文' : 'Switch to English'}
+              aria-label={language === 'en' ? 'Switch to 中文' : 'Switch to English'}
+              className="select-none cursor-pointer bg-transparent border-none p-0 m-0 hover:scale-110 transition-transform"
+              style={{background: 'none'}}
+            >
+              {language === 'en'
+                ? (
+                  <img
+                    src="/uk.jpeg"
+                    alt="UK flag"
+                    width={32}
+                    height={32}
+                    className="inline-block align-middle border border-gray-300 shadow-sm mr-1"
+                    style={{objectFit: 'cover', marginTop: '-2px'}}
+                  />
+                )
+                : (
+                  <img
+                    src="/china-flag.jpeg"
+                    alt="China flag"
+                    width={32}
+                    height={32}
+                    className="inline-block align-middle border border-gray-300 shadow-sm ml-1"
+                    style={{objectFit: 'cover', marginTop: '-2px'}}
+                  />
+                )}
+            </button>
+          </div>
         </nav>
       </div>
     </header>
