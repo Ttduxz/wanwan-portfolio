@@ -7,9 +7,10 @@ import useEmblaCarousel from 'embla-carousel-react';
 interface ProjectCarouselProps {
   images: string[];
   title: string;
+  language?: 'en' | 'zh';
 }
 
-export default function ProjectCarousel({ images, title }: ProjectCarouselProps) {
+export default function ProjectCarousel({ images, title, language = 'en' }: ProjectCarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
   const scrollPrev = useCallback(() => {
@@ -45,7 +46,7 @@ export default function ProjectCarousel({ images, title }: ProjectCarouselProps)
         onClick={scrollPrev}
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4"><path d="m15 18-6-6 6-6"/></svg>
-        <span className="sr-only">Previous slide</span>
+        <span className="sr-only">{language === 'en' ? 'Previous slide' : '上一张'}</span>
       </button>
 
       <button
@@ -53,7 +54,7 @@ export default function ProjectCarousel({ images, title }: ProjectCarouselProps)
         onClick={scrollNext}
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4"><path d="m9 18 6-6-6-6"/></svg>
-        <span className="sr-only">Next slide</span>
+        <span className="sr-only">{language === 'en' ? 'Next slide' : '下一张'}</span>
       </button>
     </div>
   );

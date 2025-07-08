@@ -9,7 +9,11 @@ const brands = [
   { name: 'Vitawelle', logo: '/vitawelle.png', width: 180, height: 103 },
 ];
 
-export default function BrandsSection() {
+interface BrandsSectionProps {
+  language: 'en' | 'zh';
+}
+
+export default function BrandsSection({ language }: BrandsSectionProps) {
   return (
     <section id="brands" className="relative overflow-hidden py-20 px-4 bg-gray-50 text-gray-800 lg:min-h-screen flex flex-col justify-center">
       <div 
@@ -23,10 +27,12 @@ export default function BrandsSection() {
       <AnimatedSection>
         <div className="container mx-auto text-center relative z-10">
           <h2 className="text-4xl md:text-6xl font-['Playfair_Display'] font-bold mb-4 leading-tight" style={{textShadow: '0 2px 4px rgba(0,0,0,0.05)'}}>
-            Brands I&apos;ve Worked With
+            {language === 'en' ? `Brands I've Worked With` : '我合作过的品牌'}
           </h2>
           <p className="text-lg text-gray-500 mb-16">
-            I&apos;ve had the privilege of collaborating with a diverse range of brands.
+            {language === 'en'
+              ? `I've had the privilege of collaborating with a diverse range of brands.`
+              : '我有幸与各种品牌合作。'}
           </p>
           <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-10 md:gap-x-16">
             {brands.map((brand) => (
